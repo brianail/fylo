@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    text-decoration: none;
+    box-sizing: border-box
 }
 
 
@@ -10,15 +10,15 @@
 
 
 body {
+    width: 100%;
     background-color: #181f2a;
     color: white;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ header {
 }
 
 .logo {
-    padding-left: 30px;
+    padding-left: 1rem;
 }
 
 #menu {
@@ -56,28 +56,28 @@ header {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    width: 100%;
-    top: 80px;
-    right: 0px;
-    background: #000000e1;
-    color: white;
-    transition: 0.6s;
-    z-index: 1000;
+    width: 30%;
     height: 0px;
+    top: 100px;
+    right: 1.5rem;
+    border-radius: 1rem;
+    background: #000000ee;
+    color: white;
+    transition: 1s;
+    z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
 }
 
 #nav.active #menu {
-    height: calc(40vh);
+    height: calc(50vh);
     visibility: visible;
     overflow-y: auto;
 }
 
 #menu a {
-    font-size: 1.2em;
-    padding: 1rem 0;
-    margin: 0 1rem;
+    font-size: 1.5em;
+    padding: 1rem;
     color: white;
 }
 
@@ -127,31 +127,32 @@ header {
 
 
 .conteudo-superior {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-    margin-bottom: 100px;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 .conteudo-superior h1 {
     text-align: center;
-    width: 600px;
-    padding: 1rem;
+    width: 50%;
+    padding: 2rem;
 }
 
 .conteudo-superior p {
-    width: 450px;
+    width: 40%;
     text-align: center;
     color: rgba(255, 255, 255, 0.815);
     padding: 20px;
 }
 
 .conteudo-superior button {
-    width: 200px;
-    padding: 0.7rem;
-    border-radius: 2rem;
+    width: 250px;
+    padding: 1rem;
+    border-radius: 1rem;
     color: white;
     background: linear-gradient(360deg, hsla(176, 68%, 64%, 1) 6%, hsla(176, 68%, 64%, 1) 20%, hsla(198, 60%, 50%, 1) 100%);
     font-size: 1em;
@@ -163,82 +164,100 @@ header {
 }
 
 .area-cards {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .card {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 300px;
-    height: 290px;
+    width: 45%;
+    height: 330px;
     box-sizing: border-box;
     padding: 10px;
+    position: relative;
 }
 
-.card img {
-    padding-bottom: 10px;
-    align-self: center;
-    width: 100px;
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2rem;
+    width: 60px;
+
+}
+
+.conteudo-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
 }
 
 .conteudo-texto h2 {
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    font-weight: 300;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .conteudo-texto p {
     text-align: center;
+    width: 90%;
+    font-weight: 200;
     color: rgba(255, 255, 255, 0.815);
 }
 
 .conteudo-juntos {
-    padding: 20px;
-    margin: auto;
+    width: 90%;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .banner-creative {
-    margin: auto;
+    margin: 1rem;
 }
 
 .conteudo {
-    width: 600px;
-    padding: 10px;
+    width: 50%;
+    padding: 1rem;
     margin: auto;
 }
 
 .conteudo h1 {
     font-size: 3em;
     font-weight: 200;
-    padding: 10px 0px;
+    padding: 1rem 0px;
 }
 
 .conteudo p {
     width: 90%;
     font-size: 1em;
-    padding: 10px 0px;
+    padding: 1rem 0px;
     color: rgba(255, 255, 255, 0.815);
 }
 
 .conteudo h3 a {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 100;
     color: #65e2d9;
     text-decoration: underline;
 }
 
 .card-compartilhados {
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 1rem;
@@ -246,11 +265,11 @@ header {
 }
 
 .cards-down {
-    box-sizing: content-box;
+    width: 50%;
+    box-sizing: border-box;
     margin: 1rem;
     border-radius: 1rem;
-    padding: 20px;
-    width: 350px;
+    padding: 2rem;
     background-color: hsl(219, 30%, 18%);
 }
 
@@ -263,11 +282,11 @@ header {
 .inferior {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .text {
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 .text h4 {
@@ -282,7 +301,7 @@ header {
 
 .cards-down img {
     width: 60px;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 .card-get {
@@ -292,14 +311,14 @@ header {
     justify-content: center;
     border-radius: 1rem;
     background-color: hsla(217, 26%, 20%, 0.788);
-    width: 450px;
-    padding: 10px;
+    width: 40%;
+    padding: 1rem;
 }
 
 .card-get h1 {
     font-weight: 200;
     font-size: 2rem;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .card-get p {
@@ -312,20 +331,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 button {
     font-size: 0.7rem;
-    padding: 15px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
     border-radius: 1rem;
     color: white;
 }
 
 #email {
     border-radius: 1rem;
-    padding: 15px;
+    padding: 1rem;
     color: rgb(172, 172, 172);
     background-color: white;
     width: 250px;
@@ -339,53 +358,53 @@ button {
 
 footer {
     width: 100%;
-    height: 300px;
+    height: 40vh;
     background-color: hsl(216, 53%, 9%);
     color: white;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 .logo-inferior {
-    padding-left: 30px;
+    padding: 1rem;
 }
 
 .horizontal {
-    padding-top: 30px;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .localizacao p {
-    width: 250px;
+    width: 20rem;
     padding: 15px;
 }
 
 .comunicacao {
-    padding: 15px;
+    padding: 1rem;
     color: white;
 }
 
 .tel {
-    padding: 5px;
+    padding: 1rem;
 }
 
 .tel span {
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 
 .email span {
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 
 .lista {
-    padding: 15px;
+    padding: 1rem;
 }
 
 .lista ul li {
     display: block;
-    padding: 5px;
+    padding: 0.5rem;
     list-style: none;
 }
 
@@ -403,6 +422,11 @@ footer {
 
 
 @media (max-width: 700px) {
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
 
     /* MENU */
     #menu {
@@ -492,18 +516,18 @@ footer {
     }
 
     /* FIM DO MENU */
-    .conteudo-superior{
+    .conteudo-superior {
         width: 100%;
     }
 
     .conteudo-superior h1 {
         text-align: center;
-        width: 400px;
+        width: 90%;
         padding: 1rem;
     }
 
     .conteudo-superior p {
-        width: 300px;
+        width: 80%;
     }
 
     .area-cards {
@@ -513,21 +537,20 @@ footer {
         margin: 0.8rem;
     }
 
-
     .card {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 200px;
+        width: 80%;
         height: 300px;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 1rem;
     }
 
     .card h2 {
         text-align: center;
-        padding: 10px;
+        padding: 1rem;
         font-weight: 300;
     }
 
@@ -536,32 +559,58 @@ footer {
         color: rgba(255, 255, 255, 0.815);
     }
 
+    .conteudo-juntos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteudo{
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     .conteudo h1 {
-        font-size: 1.9em;
+        text-align: center;
+        font-size: 2.5em;
         font-weight: 200;
-        padding: 10px 0px;
+        padding: 1rem 0;
     }
 
     .conteudo p {
         width: 90%;
-        font-size: 16px;
-        padding: 10px 0px;
+        font-size: 1em;
+        padding: 1rem 0;
         color: rgba(255, 255, 255, 0.815);
     }
 
     .conteudo h3 a {
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 100;
         color: #65e2d9;
         text-decoration: underline;
     }
 
-    .conteudo-juntos{
+    .card-compartilhados{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .card-get{
+    .cards-down{
         width: 90%;
+    }
+
+    .card-get {
+        width: 90%;
+        box-sizing: border-box;
         text-align: center;
     }
 
@@ -570,15 +619,15 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 250px;
     }
 
-    footer{
-        width: auto;
+    footer {
+        width: 100%;
         height: auto;
     }
-    .horizontal{
-        border: 1px solid red;
+
+    .horizontal {
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
