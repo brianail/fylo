@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    list-style: none;
+
 }
 
 
@@ -358,7 +360,7 @@ button {
 
 footer {
     width: 100%;
-    height: 40vh;
+    height: auto;
     background-color: hsl(216, 53%, 9%);
     color: white;
     padding: 1rem;
@@ -373,49 +375,60 @@ footer {
     padding-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.localizacao p {
-    width: 20rem;
-    padding: 15px;
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.comunicacao {
+.infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.infos span{
+    margin: 1rem 0;
+}
+
+.colunas {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.colunas ul{
     padding: 1rem;
-    color: white;
 }
 
-.tel {
-    padding: 1rem;
-}
-
-.tel span {
-    padding-left: 1rem;
-}
-
-.email span {
-    padding-left: 1rem;
-}
-
-.lista {
-    padding: 1rem;
-}
-
-.lista ul li {
-    display: block;
+.colunas ul li{
     padding: 0.5rem;
-    list-style: none;
 }
 
-.lista ul li a {
+.colunas ul li a{
+    padding: 0.5rem;
     color: white;
+    text-decoration: none;
+    font-weight: 200;
+
 }
 
-.lista ul li a:hover {
-    border-bottom: 2px solid white;
-    color: white;
-
+.colunas ul li a:hover{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
 }
 
 
@@ -567,7 +580,7 @@ footer {
         width: 100%;
     }
 
-    .conteudo{
+    .conteudo {
         width: 90%;
         display: flex;
         align-items: flex-start;
@@ -596,7 +609,7 @@ footer {
         text-decoration: underline;
     }
 
-    .card-compartilhados{
+    .card-compartilhados {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -604,7 +617,7 @@ footer {
         justify-content: center;
     }
 
-    .cards-down{
+    .cards-down {
         width: 90%;
     }
 
@@ -614,7 +627,7 @@ footer {
         text-align: center;
     }
 
-    .botao-email{
+    .botao-email {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -627,10 +640,57 @@ footer {
     }
 
     .horizontal {
-        width: 90%;
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .infos {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .colunas {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: row;
+        margin: 2rem 0;
+    }
+    
+    .colunas ul{
+        padding: 1rem;
+    }
+    
+    .colunas ul li{
+        padding: 0.5rem;
+    }
+    
+    .colunas ul li a{
+        padding: 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+    
+    }
+    
+    .colunas ul li a:hover{
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: white;
+        color: black;
     }
 
 }
