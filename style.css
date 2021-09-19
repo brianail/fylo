@@ -64,14 +64,14 @@ header {
     right: 0;
     background: #000000;
     color: white;
-    transition: 2s;
+    transition: 1s;
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
 }
 
 #nav.active #menu {
-    width: 50%;
+    width: 300px;
     visibility: visible;
     overflow-y: auto;
 }
