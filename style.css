@@ -71,7 +71,7 @@ header {
 }
 
 #nav.active #menu {
-    width: 300px;
+    width: 290px;
     visibility: visible;
     overflow-y: auto;
 }
